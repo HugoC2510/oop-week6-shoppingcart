@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _23168_Hugo_Camps_OOP_Week6
 {
-    public class Apple:Fruit
+    public class Apple:Product
     {
         double price{ get; set; }
         string name;
@@ -14,6 +14,14 @@ namespace _23168_Hugo_Camps_OOP_Week6
         {
             this.name = "Apple";
             this.price = 0.60;
+        }
+        public override double Price()
+        {
+            return this.price ;
+        }
+        public override string Name()
+        {
+            return this.name;
         }
     }
 }

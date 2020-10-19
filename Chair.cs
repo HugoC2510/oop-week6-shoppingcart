@@ -6,15 +6,14 @@ using System.Threading.Tasks;
 
 namespace _23168_Hugo_Camps_OOP_Week6
 {
-    public class Orange:Product
+    class Chair:Product
     {
-        public double price { get; set; }
-        public string name { get; set; }
-        public Orange()
+        double price { get; set; }
+        string name;
+        public Chair()
         {
-            this.name = "Orange";
-            this.price = 0.25;
-
+            this.name = "Chair";
+            this.price = 25;
         }
         public override double Price()
         {
